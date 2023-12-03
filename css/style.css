@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-image: url("../img/bg.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 40%;
+}
+
+.header {
+  display: flex;
+  padding: 20px 0;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.header__nav ul li a {
+  color: #2e2f38;
+}
+.header__auth {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+.header__auth__signup {
+  color: #ffffff;
+}
+.header__auth__login {
+  color: #ffffff;
+  background-color: #fa504d;
+  padding: 8px 40px;
+}
+
+.main {
+  width: 60%;
+  margin-top: 80px;
+}
+.main h1 {
+  font-family: "Belgrano", serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+  color: #2e2f38;
+  position: relative;
+}
+.main h1 span::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: -90px;
+  left: 140px;
+}
+.main h2 {
+  color: #8e8e8e;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 10px;
+  position: relative;
+}
+.main h2 span::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80px;
+  height: 10px;
+  position: absolute;
+  top: 25px;
+}
+.main__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  gap: 30px;
+  font-size: 18px;
+}
+.main__buttons .button {
+  background-color: #fa504d;
+  color: #ffffff;
+  padding: 12px 90px;
+}
+.main__buttons .arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  color: #2e2f38;
+  gap: 10px;
+}
+.main__artwork {
+  margin-top: 40px;
+}
+.main__artwork h3 {
+  font-family: "Belgrano", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #2e2f38;
+}
+.main__artwork div {
+  display: flex;
+  gap: 30px;
+}
+.main__artwork div figure {
+  border: 1px solid #8e8e8e;
+  padding: 7px 7px 0 7px;
+}
+
+.hero {
+  position: absolute;
+  top: 100px;
+  right: 3%;
+}
+.hero__person {
+  background-color: #ffffff;
+  padding: 30px;
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  left: 5%;
+}
+.hero .person__up {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hero .person__up .person__profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.hero .person__up .person__profile .profile__info {
+  display: flex;
+  flex-direction: column;
+}
+.hero .person__up .person__profile .profile__info h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #8e8e8e;
+}
+.hero .person__up .person__profile .profile__info p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #2e2f38;
+}
+.hero .person__up .profile__bind {
+  margin-left: auto;
+}
+.hero .person__up .profile__bind .bind__titile {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #8e8e8e;
+}
+.hero .person__up .profile__bind .bind__amount {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #2e2f38;
+}
+.hero .person__down {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.hero .person__down .button-bid {
+  background-color: #fa504d;
+  color: #ffffff;
+  padding: 10px 100px;
+}
+.hero .person__down .button-view {
+  color: #fa504d;
+  padding: 10px 80px;
+  margin-bottom: auto;
+}
+.hero__testimonials {
+  position: absolute;
+  bottom: -80px;
+  display: flex;
+  gap: 16%;
+  color: white;
+  margin-left: 5%;
+}
+.hero__testimonials div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__testimonials div .item__number {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #fa504d;
+}
+.hero__testimonials div .item__label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */
